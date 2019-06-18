@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+    <script src="Tone.js">
+    </script>
+
+    <script src="music.js" type="text/javascript">
+    </script>
+
+</header>
+
+<body onload="main();">
+    <div id="intro">
+        <p> You can play the piano with the mouse or your computer keyboard</p>
+        <p> Click key or Press 7 to see what letter on the computer keyboard correspond to the piano keyboard. </p>
+        <p>E/R = Enter or Return, BD = backspace or Delete, Sft = shift, Sp = Space, Up = Up Arrow, Dn = Down Arrow, left = Left Arrow, Right = Right Arrow</p>
+        <p> Click key again or Press 3 to go back to the original piano keyboard</p>
+    </div>
+    <button onclick="document.getElementById('intro').innerHTML = 
+        'You can play the piano with the mouse or your computer keyboard<br><br> Click key or Press 7 to see what letter on the computer keyboard correspond to the piano keyboard.<br><br>E/R = Enter or Return, BD = backspace or Delete, Sft = shift, Sp = Space, Up = Up Arrow, Dn = Down Arrow, left = Left Arrow, Right = Right Arrow<br><br> Click the Button key again or Press 3 to go back to the original piano keyboard<br><br>';">English</button>
+    <button onclick="document.getElementById('intro').innerHTML = '你可以用键盘和鼠标来弹钢琴<br><br>点Key或者按7去看电脑键盘的按钮在钢琴的哪里.<br><br>E/R = Enter or Return, BD = backspace or Delete, Sft = shift, Sp = Space, Up = Up Arrow, Dn = Down Arrow, left = Left Arrow, Right = Right Arrow<br><br>点Key或者按3回到原来的钢琴<br><br>';">Mandarin</button>
+    <button onclick="document.getElementById('intro').innerHTML = 'Bạn có thể chơi đàn bằng chuột hoặc bàn phím máy tính. Click vào key hoặc bấm 7 để biết chữ nào trên bàn phím đi với nốt nào.<br><br>E/R = Enter or Return, BD = backspace or Delete, Sft = shift, Sp = Space, Up = Up Arrow, Dn = Down Arrow, left = Left Arrow, Right = Right Arrow<br><br>Click số 3 để quay lại nốt phím ban đầu.<br><br>';">Vietnamese</button>
+    <button onclick="document.getElementById('intro').innerHTML = 'Puedes tocar el piano con el raton o tu teclado <br><br> Oprime el button Key o el numero 7 en tu teclado para ver que letra en el teclado corresponde con la tecla del piano.<br><br>E/R = Enter or Return, BD = backspace or Delete, Sft = shift, Sp = Space, Up = Up Arrow, Dn = Down Arrow, left = Left Arrow, Right = Right Arrow<br><br> Oprime el button Key otra vez o 3 oprime el button, en tu teclado para regresar al piano original <br><br>';">Spanish</button>
+    <button onclick="document.getElementById('intro').innerHTML = 'Vous pouviez jouer le piano avec la sourie ou avec le clavier de l`ordinateur<br><br> Cliquer key ou appuyer 7 pour voir quel lettre sur le clavier de l`ordinateur correspond au clavier du piano. <br><br>E/R = Enter or Return, BD = backspace or Delete, Sft = shift, Sp = Space, Up = Up Arrow, Dn = Down Arrow, left = Left Arrow, Right = Right Arrow<br><br> Cliquer key au retour ou appuyer 3 pour aller au clavier piano originale<br><br>';">French</button>
+    <button onclick="key()">Key</button>
+    <canvas id="mainCanvas"> </canvas>
+</body>
+
+</html>
